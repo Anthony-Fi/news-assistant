@@ -8,6 +8,7 @@
     "https://www.nottinghampost.com/sport/football/?service=rss",
     "https://strettynews.com/feed/",
     "https://www.hitc.com/news/feed/"
+    
   ],
   "tech": [
     "https://nvidianews.nvidia.com/rss.xml",
@@ -66,11 +67,6 @@
     "https://www.walesonline.co.uk/?service=rss",
     "https://www.yorkpress.co.uk/news/rss"
   ],
-  "fi news": [
-    "https://www.helsinkitimes.fi/?format=feed",
-    "https://dailyfinland.fi/feed/latest-rss.xml",
-    "https://finlandtoday.fi/feed/"
-  ],
   "fi-en-crime": [
     "https://poliisi.fi/en/central-finland-police-department/-/asset_publisher/ZtAEeHB39Lxr/rss",
     "https://poliisi.fi/en/eastern-uusimaa-police-department/-/asset_publisher/ZtAEeHB39Lxr/rss",
@@ -78,23 +74,44 @@
     "https://poliisi.fi/en/hame-police-department/-/asset_publisher/ZtAEeHB39Lxr/rss",
     "https://poliisi.fi/en/lapland-police-department/-/asset_publisher/ZtAEeHB39Lxr/rss",
     "https://poliisi.fi/en/oulu-police-department/-/asset_publisher/ZtAEeHB39Lxr/rss",
+    "https://poliisi.fi/en/pohjois-savo-police-department/-/asset_publisher/ZtAEeHB39Lxr/rss",
+    "https://poliisi.fi/en/pohjois-uusimaa-police-department/-/asset_publisher/ZtAEeHB39Lxr/rss",
+    "https://poliisi.fi/en/south-finland-police-department/-/asset_publisher/ZtAEeHB39Lxr/rss",
+    "https://poliisi.fi/en/tampere-police-department/-/asset_publisher/ZtAEeHB39Lxr/rss",
+    "https://poliisi.fi/en/valkeakoski-police-department/-/asset_publisher/ZtAEeHB39Lxr/rss",
+    "https://poliisi.fi/en/vastavuori-police-department/-/asset_publisher/ZtAEeHB39Lxr/rss",
+    "https://poliisi.fi/en/wayanta-police-department/-/asset_publisher/ZtAEeHB39Lxr/rss",
     "https://poliisi.fi/en/national-bureau-of-investigation/-/asset_publisher/ZtAEeHB39Lxr/rss",
     "https://poliisi.fi/en/national-police-board/-/asset_publisher/ZtAEeHB39Lxr/rss",
     "https://poliisi.fi/en/ostrobothnia-police-department/-/asset_publisher/ZtAEeHB39Lxr/rss",
+    "https://poliisi.fi/en/oulu-police-department/-/asset_publisher/ZtAEeHB39Lxr/rss",
+    "https://poliisi.fi/en/southeastern-finland-police-department/-/asset_publisher/ZtAEeHB39Lxr/rss",
     "https://poliisi.fi/en/southwestern-finland-police-department/-/asset_publisher/ZtAEeHB39Lxr/rss",
-    "https://poliisi.fi/en/western-uusimaa-police-department/-/asset_publisher/kYNlzOMSRO5N/rss",
-    "https://finlandtoday.fi/feed/",
-    "https://www.iltalehti.fi/rss/rss.xml"
+    "https://poliisi.fi/en/western-uusimaa-police-department/-/asset_publisher/kYNlzOMSRO5N/rss"
   ],
   "fi-fi-crime": [
     "https://poliisi.fi/helsingin-poliisilaitos/-/asset_publisher/ZtAEeHB39Lxr/rss",
+    "https://poliisi.fi/ita-uudenmaan-poliisilaitos/-/asset_publisher/ZtAEeHB39Lxr/rss",
+    "https://poliisi.fi/kuopion-poliisilaitos/-/asset_publisher/ZtAEeHB39Lxr/rss",
     "https://poliisi.fi/lapin-poliisilaitos/-/asset_publisher/ZtAEeHB39Lxr/rss",
+    "https://poliisi.fi/oulu-poliisilaitos/-/asset_publisher/ZtAEeHB39Lxr/rss",
+    "https://poliisi.fi/pohjois-savo-poliisilaitos/-/asset_publisher/ZtAEeHB39Lxr/rss",
+    "https://poliisi.fi/pohjois-uudenmaan-poliisilaitos/-/asset_publisher/ZtAEeHB39Lxr/rss",
+    "https://poliisi.fi/suomenlinnan-poliisilaitos/-/asset_publisher/ZtAEeHB39Lxr/rss",
+    "https://poliisi.fi/tampere-poliisilaitos/-/asset_publisher/ZtAEeHB39Lxr/rss",
+    "https://poliisi.fi/valkeakoski-poliisilaitos/-/asset_publisher/ZtAEeHB39Lxr/rss",
+    "https://poliisi.fi/vastavuori-poliisilaitos/-/asset_publisher/ZtAEeHB39Lxr/rss",
+    "https://poliisi.fi/wayanta-poliisilaitos/-/asset_publisher/ZtAEeHB39Lxr/rss",
+    "https://poliisi.fi/ostrobothnia-poliisilaitos/-/asset_publisher/ZtAEeHB39Lxr/rss",
+    "https://poliisi.fi/oulu-poliisilaitos/-/asset_publisher/ZtAEeHB39Lxr/rss",
+    "https://poliisi.fi/southeastern-finland-police-department/-/asset_publisher/ZtAEeHB39Lxr/rss",
     "https://poliisi.fi/western-uusimaa-police-department/-/asset_publisher/kYNlzOMSRO5N/rss",
     "https://poliisi.fi/hameen-poliisilaitos/-/asset_publisher/ZtAEeHB39Lxr/rss",
     "https://poliisi.fi/ita-suomen-poliisilaitos/-/asset_publisher/ZtAEeHB39Lxr/rss",
     "https://poliisi.fi/kaakkois-suomen-poliisilaitos/-/asset_publisher/ZtAEeHB39Lxr/rss",
     "https://poliisi.fi/keskusrikospoliisi/-/asset_publisher/ZtAEeHB39Lxr/rss",
     "https://poliisi.fi/lounais-suomen-poliisilaitos/-/asset_publisher/ZtAEeHB39Lxr/rss",
+    "https://poliisi.fi/lansi-uudenmaan-poliisilaitos/-/asset_publisher/NbhxOTjN3wK9/rss",
     "https://poliisi.fi/oulun-poliisilaitos/-/asset_publisher/ZtAEeHB39Lxr/rss",
     "https://poliisi.fi/pohjanmaan-poliisilaitos/-/asset_publisher/ZtAEeHB39Lxr/rss",
     "https://poliisi.fi/poliisihallitus/-/asset_publisher/ZtAEeHB39Lxr/rss",

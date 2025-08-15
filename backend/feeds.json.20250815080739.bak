@@ -67,6 +67,7 @@
     "https://www.yorkpress.co.uk/news/rss"
   ],
   "fi news": [
+    "https://www.iltalehti.fi/rss/rss.xml",
     "https://www.helsinkitimes.fi/?format=feed",
     "https://dailyfinland.fi/feed/latest-rss.xml",
     "https://finlandtoday.fi/feed/"
