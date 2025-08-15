@@ -1,0 +1,143 @@
+{
+  "politics": {
+    "synonyms": [
+      "political",
+      "government",
+      "public policy",
+      "governance",
+      "statecraft",
+      "civic",
+      "campaign",
+      "election",
+      "manifesto",
+      "legislation",
+      "bill",
+      "act",
+      "committee",
+      "parliament",
+      "congress",
+      "senate",
+      "whitehall",
+      "downing street"
+    ],
+    "parties": {
+      "uk": [
+        "Conservative",
+        "Conservatives",
+        "Tories",
+        "Labour",
+        "Liberal Democrats",
+        "Lib Dems",
+        "Reform UK",
+        "Scottish National Party",
+        "SNP",
+        "Plaid Cymru",
+        "Green Party"
+      ],
+      "usa": [
+        "Democratic Party",
+        "Democrat",
+        "Democrats",
+        "Republican Party",
+        "Republican",
+        "Republicans",
+        "GOP"
+      ],
+      "eu": [
+        "European People's Party",
+        "EPP",
+        "Socialists and Democrats",
+        "S&D",
+        "Renew Europe",
+        "Greens/EFA",
+        "Identity and Democracy",
+        "ID",
+        "European Conservatives and Reformists",
+        "ECR",
+        "The Left"
+      ]
+    },
+    "institutions": {
+      "uk": [
+        "Parliament",
+        "House of Commons",
+        "House of Lords",
+        "Downing Street",
+        "Number 10",
+        "Whitehall",
+        "Cabinet",
+        "Home Office",
+        "Foreign Office",
+        "Treasury",
+        "Chancellor",
+        "MP"
+      ],
+      "usa": [
+        "Congress",
+        "Senate",
+        "House of Representatives",
+        "White House",
+        "Supreme Court",
+        "Capitol Hill",
+        "Governor",
+        "Attorney General",
+        "Senator",
+        "Representative"
+      ],
+      "eu": [
+        "European Parliament",
+        "European Commission",
+        "European Council",
+        "Council of the EU",
+        "MEP",
+        "Commission President"
+      ]
+    },
+    "people": {
+      "uk": [
+        "Keir Starmer",
+        "Rishi Sunak",
+        "Kemi Badenoch",
+        "Nigel Farage",
+        "Jess Phillips",
+        "Ed Davey",
+        "Jeremy Hunt",
+        "Sadiq Khan"
+      ],
+      "usa": [
+        "Donald Trump",
+        "Joe Biden",
+        "Kamala Harris",
+        "Mike Johnson",
+        "Mitch McConnell",
+        "Nancy Pelosi"
+      ],
+      "eu": [
+        "Ursula von der Leyen",
+        "Emmanuel Macron",
+        "Olaf Scholz",
+        "Giorgia Meloni",
+        "Pedro Sanchez"
+      ],
+      "ru": [
+        "Vladimir Putin"
+      ]
+    },
+    "related_terms": [
+      "policy",
+      "policies",
+      "minister",
+      "ministry",
+      "civil service",
+      "lawmaker",
+      "backbencher",
+      "whip",
+      "shadow cabinet",
+      "vote",
+      "ballot",
+      "poll",
+      "campaign trail",
+      "constituency"
+    ]
+  }
+}

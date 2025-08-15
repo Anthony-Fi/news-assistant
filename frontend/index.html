@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>News Assistant</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="container py-3">
+    <h1 class="mb-3">News Assistant</h1>
+
+    <div class="row g-3">
+      <div class="col-md-3">
+        <label class="form-label">Feed Group</label>
+        <select id="feedGroup" class="form-select" title="Choose the news feed group"></select>
+      </div>
+      <div class="col-md-3">
+        <label class="form-label">Model</label>
+        <div class="input-group">
+          <select id="model" class="form-select" title="Choose the LLM model for summarization and article generation"></select>
+          <button id="btnRefreshModels" class="btn btn-outline-secondary" type="button" title="Refresh the installed models list from Ollama">Refresh</button>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <label class="form-label">Query</label>
+        <input id="query" class="form-control" placeholder="e.g., UK football transfers" title="Describe what you want: topics, teams, or angles (e.g., 'UK football transfers')" />
+        <div class="form-check mt-1">
+          <input class="form-check-input" type="checkbox" id="expandAI" />
+          <label class="form-check-label" for="expandAI" title="When enabled, the model will evaluate all fetched headlines and auto-select those it deems related, even without exact keyword matches.">
+            Expand to related (AI)
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="my-3 d-flex gap-2 flex-wrap">
+      <div class="btn-group">
+        <button id="btnFetch" class="btn btn-primary" title="Fetch the latest headlines for the selected group">Fetch Headlines</button>
+        <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false" title="More feed actions">
+          <span class="visually-hidden">Toggle dropdown</span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#" id="ddValidate" title="Validate the RSS feeds in the selected group and test sample scraping">Validate Feeds</a></li>
+          <li><a class="dropdown-item" href="#" id="ddPrune" title="Auto-prune failing feeds from the selected group (dry-run first, then confirm write)">Prune Failing Feeds</a></li>
+        </ul>
+      </div>
+      <button id="btnSummarize" class="btn btn-secondary" title="Summarize the headlines using the selected model. Mentions will auto-select relevant items.">Summarize</button>
+      <button id="btnScrape" class="btn btn-warning" title="Scrape full content for the selected headlines">Scrape Selected</button>
+      <button id="btnScanVideos" class="btn btn-outline-info" title="Scan selected (or all) headlines for videos">Scan Videos</button>
+      <button id="btnGenerate" class="btn btn-success" title="Generate a coherent article from the scraped articles">Generate Article</button>
+      <button id="btnTTS" class="btn btn-outline-dark" title="Read the text in the Output panel aloud">Read Aloud</button>
+      <button id="btnPDF" class="btn btn-outline-primary" title="Export the Output panel text to a PDF file">Export PDF</button>
+    </div>
+
+    <div class="row g-3">
+      <div class="col-md-6">
+        <h5>Headlines</h5>
+        <div id="headlines" class="list-group small" style="max-height: 50vh; overflow:auto" title="List of fetched headlines"></div>
+        <h5 class="mt-3">Videos <span id="vidCount" class="text-muted small"></span></h5>
+        <div class="d-flex align-items-center gap-2 mb-2 small">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="vidPlayableOnly" checked>
+            <label class="form-check-label" for="vidPlayableOnly">Playable only</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="vidUniquePerPage" checked>
+            <label class="form-check-label" for="vidUniquePerPage">Unique per page</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="vidFromSelectedOnly">
+            <label class="form-check-label" for="vidFromSelectedOnly">From selected only</label>
+          </div>
+          <select id="vidType" class="form-select form-select-sm" style="width:auto">
+            <option value="all">All types</option>
+            <option value="direct">Direct (mp4/webm)</option>
+            <option value="stream">Streams (m3u8)</option>
+            <option value="platform">YouTube/Vimeo</option>
+            <option value="embed">Embeds/other</option>
+          </select>
+          <input id="vidSearch" class="form-control form-control-sm" placeholder="Filter by keyword or domain" style="max-width: 240px;">
+        </div>
+        <div id="videos" class="list-group small" style="max-height: 30vh; overflow:auto" title="Videos extracted from articles"></div>
+      </div>
+      <div class="col-md-6">
+        <h5>Output</h5>
+        <textarea id="output" class="form-control" rows="20" placeholder="Summaries or generated article will appear here..." title="LLM output or scraped content will show here"></textarea>
+        <h5 class="mt-3">Video Player</h5>
+        <div id="videoArea" class="border rounded p-2">
+          <video id="videoEl" class="w-100" controls playsinline style="max-height: 60vh; background: #000;"></video>
+          <iframe id="iframePlayer" style="display:none; width: 100%; height: 360px; border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <div id="videoStatus" class="small text-muted mt-2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-3" id="status"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@1"></script>
+  <script src="/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+{
+  "uk_football": [
+    "https://feeds.bbci.co.uk/sport/football/rss.xml",
+    "https://www.skysports.com/rss/12040",
+    "https://www.theguardian.com/football/rss"
+  ],
+  "tech": [
+    "https://feeds.arstechnica.com/arstechnica/index",
+    "https://www.theverge.com/rss/index.xml",
+    "https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml"
+  ],
+  "uk sport": [
+    "https://feeds.bbci.co.uk/sport/rss.xml",
+    "https://www.skysports.com/rss/12040",
+    "https://www.dailymail.co.uk/sport/index.rss",
+    "https://www.thesun.co.uk/sport/feed/",
+    "https://www.mirror.co.uk/sport/?service=rss",
+    "https://www.standard.co.uk/sport/rss",
+    "https://www.independent.co.uk/sport/rss",
+    "https://www.theguardian.com/uk/sport/rss",
+    "https://givemesport.com/feed",
+    "https://www.football.co.uk/rss/",
+    "https://sportsnewsireland.com/feed",
+    "https://thesporting.blog/blog?format=rss",  
+    "https://www.cricketworld.com/rss/",
+    "https://www.bbc.co.uk/sport/football/rss.xml",
+    "http://newsrss.bbc.co.uk/rss/sportonline_uk_edition/rugby_union/rss.xml",
+    "http://newsrss.bbc.co.uk/rss/sportonline_uk_edition/cricket/rss.xml",
+    "http://newsrss.bbc.co.uk/rss/sportonline_uk_edition/tennis/rss.xml",
+    "http://newsrss.bbc.co.uk/rss/sportonline_uk_edition/golf/rss.xml",
+    "http://newsrss.bbc.co.uk/rss/sportonline_uk_edition/motorsport/rss.xml",
+    "https://www.inews.co.uk/sport/feed"
+  ]
+}
